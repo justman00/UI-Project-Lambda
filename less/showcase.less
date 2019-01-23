@@ -1,0 +1,56 @@
+.secondary-section {
+  margin-top: 10%;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .showcase {
+    margin-top: 5%;
+    margin-bottom: 9%;
+    .flex-it();
+    flex-direction: column;
+
+    .main-img {
+      position: relative;
+      width: 100%;
+      .flex-it();
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .special-text {
+      align-self: flex-end;
+      position: absolute;
+      background-color: #d3d3d3;
+      border: 1px solid white;
+      bottom: -40px;
+      padding: 3.5% 7%;
+      h2 {
+        font-size: 2.5rem;
+        letter-spacing: 0.8rem;
+        font-weight: 400;
+        font-family: "Roboto";
+      }
+    }
+
+    .first {
+      align-self: flex-start;
+    }
+
+    .main-text {
+      width: 50%;
+      margin-top: 10%;
+      p {
+        font-weight: 500;
+        font-size: 1.8rem;
+        font-family: sans-serif;
+        margin-bottom: 7%;
+        line-height: 1.25;
+      }
+    }
+  }
+}
