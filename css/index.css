@@ -140,9 +140,26 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
+.container {
   max-width: 1000px;
   margin: 0 auto;
+}
+.all-sections {
+  width: 90%;
+  margin: 0 auto;
+}
+.custom-btn {
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 15px 25px;
+  font-weight: 600;
+  outline: none;
+}
+.custom-btn:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.5s;
 }
 .jumbotron {
   position: relative;
@@ -165,4 +182,53 @@ body {
   color: white;
   background-color: transparent;
   font-weight: 700;
+}
+.general-info {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.general-info .text-info {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.general-info .text-info h2 {
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  font-weight: 900;
+}
+.general-info .text-info p {
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+.general-info .text-info button {
+  margin-top: 2%;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 15px 25px;
+  font-weight: 600;
+  outline: none;
+}
+.general-info .text-info button:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.5s;
+}
+.general-info .img-info {
+  width: 48%;
+}
+.general-info .img-info img {
+  width: 100%;
+  height: auto;
+}
+.order {
+  order: 2;
 }
