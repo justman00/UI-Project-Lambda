@@ -174,14 +174,15 @@ html {
   left: 50px;
 }
 .jumbotron .img-text h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   background-color: green;
   width: 20%;
   margin-left: 5%;
   line-height: 1.25;
   color: white;
   background-color: transparent;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 .general-info {
   margin-top: 5%;
@@ -293,12 +294,13 @@ footer {
   background-color: grey;
 }
 footer .footer {
-  padding-top: 2.5%;
-  width: 90%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 footer .footer .form {
   width: 32%;
@@ -323,4 +325,43 @@ footer .footer .form p {
   color: #e6e6e6;
   font-size: 1.3rem;
   font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+footer .footer .locations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+footer .footer .locations .location {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .footer .locations .location h3 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+footer .footer .locations .location p {
+  color: #e6e6e6;
+  font-size: 1.4rem;
+  margin-top: 4%;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 5px;
+}
+footer .copyright {
+  margin-top: 1%;
+}
+footer .copyright p {
+  color: #e6e6e6;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-bottom: 2%;
 }
