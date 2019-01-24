@@ -251,6 +251,42 @@ header .navigation h2 {
     font-weight: 500;
   }
 }
+.img-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+@media (max-width: 500px) {
+  .img-text {
+    left: 10px;
+    bottom: 25px;
+  }
+}
+.img-text h1 {
+  font-size: 6rem;
+  background-color: green;
+  width: 20%;
+  margin-left: 5%;
+  line-height: 1.25;
+  color: white;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 500px) {
+  .img-text h1 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+}
+.main-header {
+  max-width: 1000px;
+  position: relative;
+}
+.main-header img {
+  width: 100%;
+  height: auto;
+}
 .general-info {
   margin-top: 5%;
   display: flex;
@@ -344,6 +380,43 @@ header .navigation h2 {
   #img-small-2 {
     content: url("../img/home/home-mobile-img-2.png");
   }
+}
+.main-introduction {
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main-introduction p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.main-introduction-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 5%;
+}
+.main-introduction-buttons .button {
+  width: 20%;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 1.5% 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.main-introduction-buttons .button:hover {
+  color: white;
+  background: #2a7575;
+  transition: all 0.5s;
+}
+.focused {
+  background-color: #228686;
+  color: white;
 }
 .secondary-section {
   margin-top: 10%;
@@ -456,13 +529,42 @@ header .navigation h2 {
     content: url("../img/home/home-mobile-the-blocks-img.png");
   }
 }
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.description-text {
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.description-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+.description-text p {
+  font-size: 1.6rem;
+  margin-bottom: 9%;
+  line-height: 1.5;
+}
+.description-img {
+  margin-top: 5%;
+  width: 48%;
+}
 footer {
   max-width: 1000px display: flex; justify-content: center; align-items: center;;
   flex-direction: column;
   background-color: grey;
 }
 footer .footer {
-  padding-top: 7%;
+  padding-top: 4%;
   padding-bottom: 3%;
   max-width: 900px;
   margin: 0 auto;

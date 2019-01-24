@@ -106,3 +106,32 @@
     content: url("../img/home/home-mobile-the-blocks-img.png");
   }
 }
+
+.description {
+  .flex-it(space-between, flex-start);
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  &-text {
+    width: 48%;
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 5%;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 9%;
+      line-height: 1.5;
+    }
+  }
+
+  &-img {
+    margin-top: 5%;
+    width: 48%;
+  }
+}

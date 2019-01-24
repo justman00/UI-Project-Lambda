@@ -36,3 +36,41 @@
     }
   }
 }
+
+.img-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  @media @mobile {
+    left: 10px;
+    bottom: 25px;
+  }
+
+  h1 {
+    font-size: 6rem;
+    background-color: green;
+    width: 20%;
+    margin-left: 5%;
+    line-height: 1.25;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+
+    @media @mobile {
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.main-header {
+  max-width: 1000px;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .header-text {
+  }
+}
