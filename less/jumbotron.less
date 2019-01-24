@@ -3,12 +3,21 @@
   img {
     width: 100%;
     height: auto;
+
+    @media @mobile {
+      content: url("../img/home/home-mobile-jumbotron.png");
+    }
   }
 
   .img-text {
     position: absolute;
     bottom: 40px;
     left: 50px;
+    @media @mobile {
+      left: 10px;
+      bottom: 25px;
+    }
+
     h1 {
       font-size: 6rem;
       background-color: green;
@@ -19,6 +28,11 @@
       background-color: transparent;
       font-weight: 600;
       font-family: "Roboto", sans-serif;
+
+      @media @mobile {
+        font-size: 4rem;
+        font-weight: 500;
+      }
     }
   }
 }

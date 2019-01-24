@@ -148,13 +148,24 @@ html {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 500px;
+  }
 }
 .all-sections {
   max-width: 900px;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 450px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
 @import "mixins";
+@import "navigation";
 @import "jumbotron";
 @import "information";
 @import "showcase";

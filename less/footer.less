@@ -11,8 +11,20 @@ footer {
     margin: 0 auto;
     .flex-it(space-between, baseline);
 
+    @media @mobile {
+      flex-direction: column;
+      max-width: 450px;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+
     .form {
       width: 32%;
+
+      @media @mobile {
+        width: 100%;
+      }
+
       h2 {
         color: white;
         font-size: 2rem;
@@ -26,6 +38,12 @@ footer {
         border-radius: 5px;
         margin-bottom: 10px;
         padding: 7px;
+
+        @media @mobile {
+          width: 85%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
 
         &::placeholder {
           opacity: 0.5;
@@ -44,10 +62,20 @@ footer {
       .flex-it(space-between);
       width: 60%;
 
+      @media @mobile {
+        width: 100%;
+        flex-direction: column;
+      }
+
       .location {
         width: 30%;
         .flex-it(space-between, flex-start);
         flex-direction: column;
+
+        @media @mobile {
+          width: 100%;
+          margin-top: 10%;
+        }
 
         h3 {
           color: white;
@@ -64,6 +92,9 @@ footer {
           font-weight: 300;
           font-family: "Roboto", sans-serif;
           padding-bottom: 5px;
+          @media @mobile {
+            margin-top: 2%;
+          }
         }
       }
     }
@@ -71,6 +102,13 @@ footer {
 
   .copyright {
     margin-top: 1%;
+    @media @mobile {
+      margin-top: 5%;
+      padding-bottom: 5%;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+
     p {
       color: darken(white, 10%);
       font-size: 1.3rem;
@@ -78,6 +116,10 @@ footer {
       font-family: "Roboto", sans-serif;
       text-align: center;
       padding-bottom: 2%;
+
+      @media @mobile {
+        text-align: initial;
+      }
     }
   }
 }

@@ -1,9 +1,17 @@
 .secondary-section {
   margin-top: 10%;
 
+  @media @mobile {
+    margin-top: 20%;
+  }
+
   h2 {
     font-size: 3rem;
     font-weight: 700;
+
+    @media @mobile {
+      margin-bottom: 10%;
+    }
   }
 
   .showcase {
@@ -17,6 +25,10 @@
       width: 100%;
       .flex-it();
       flex-direction: column;
+      @media @mobile {
+        width: 100vw;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -26,19 +38,36 @@
       align-self: flex-end;
       position: absolute;
       background-color: #d3d3d3;
-      border: 1px solid white;
+      // border: 1px solid white;
       bottom: -40px;
       padding: 3.5% 7%;
+
+      @media @mobile {
+        align-self: center;
+        width: 90%;
+        padding: 10% 5% 3% 5%;
+        bottom: -90px;
+        .flex-it();
+      }
+
       h2 {
         font-size: 2.5rem;
         letter-spacing: 0.8rem;
         font-weight: 400;
         font-family: "Roboto";
+
+        @media @mobile {
+          letter-spacing: 1rem;
+        }
       }
     }
 
     .first {
       align-self: flex-start;
+
+      @media @mobile {
+        align-self: center;
+      }
     }
 
     .main-text {
@@ -51,6 +80,29 @@
         margin-bottom: 7%;
         line-height: 1.25;
       }
+
+      @media @mobile {
+        width: 100%;
+        margin-top: 32%;
+      }
     }
+  }
+}
+
+#img-small-3 {
+  @media @mobile {
+    content: url("../img/home/home-mobile-villas-img.png");
+  }
+}
+
+#img-small-4 {
+  @media @mobile {
+    content: url("../img/home/home-mobile-outskirts-img.png");
+  }
+}
+
+#img-small-5 {
+  @media @mobile {
+    content: url("../img/home/home-mobile-the-blocks-img.png");
   }
 }

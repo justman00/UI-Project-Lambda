@@ -3,15 +3,30 @@
   .flex-it(space-between, center);
   margin-bottom: 10%;
 
+  @media @mobile {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
   .text-info {
     width: 48%;
     .flex-it(center, flex-start);
     flex-direction: column;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     h2 {
       font-size: 2.8rem;
       margin-bottom: 5%;
       font-weight: 900;
+      font-family: "Roboto", sans-serif;
+
+      @media @mobile {
+        font-size: 2.4rem;
+        margin-top: 8%;
+      }
     }
 
     p {
@@ -19,11 +34,19 @@
       line-height: 1.15;
       margin-bottom: 5%;
       font-weight: 500;
+
+      @media @mobile {
+        margin-bottom: 8%;
+        margin-top: 3%;
+      }
     }
 
     button {
       margin-top: 2%;
       .custom-btn();
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -33,9 +56,26 @@
       width: 100%;
       height: auto;
     }
+
+    @media @mobile {
+      width: 100%;
+      order: -1;
+    }
   }
 }
 
 .order {
   order: 2;
+}
+
+#img-small-1 {
+  @media @mobile {
+    content: url("../img/home/home-mobile-img-1.png");
+  }
+}
+
+#img-small-2 {
+  @media @mobile {
+    content: url("../img/home/home-mobile-img-2.png");
+  }
 }
