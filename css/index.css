@@ -160,6 +160,9 @@ html {
     margin-left: 5%;
   }
 }
+.secret-title {
+  display: none;
+}
 .custom-btn {
   font-size: 1.6rem;
   background-color: #fff;
@@ -179,12 +182,15 @@ header {
   background-color: #94a2af;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 100356;
 }
 @media (max-width: 500px) {
   header {
     max-width: 500px;
   }
+}
+header .nav-burger {
+  cursor: pointer;
 }
 header .navigation {
   display: flex;
@@ -210,6 +216,34 @@ header .navigation h2 {
   header .navigation h2 {
     font-size: 2.5rem;
   }
+}
+#menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  width: 0;
+  background-color: #94a2af;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#menu a {
+  font-size: 5.5rem;
+  margin-top: 5%;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+#menu a:hover {
+  color: black;
+  transition: all 0.5s;
 }
 .jumbotron {
   position: relative;
