@@ -81,3 +81,49 @@
     }
   }
 }
+
+.main-header-contact {
+  // max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  @media @mobile {
+    max-width: 500px;
+  }
+
+  .img-text-contact {
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+    @media @mobile {
+      left: 15px;
+      bottom: 20px;
+    }
+
+    h1 {
+      font-size: 6rem;
+      padding: 0;
+      background-color: green;
+      // width: 30%;
+      // padding-left: 5%;
+      line-height: 1.25;
+      color: white;
+      background-color: transparent;
+      font-weight: 600;
+      font-family: "Roboto", sans-serif;
+
+      @media @mobile {
+        font-size: 6rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+    @media @mobile {
+      content: url("../img/contact/contact-mobile-jumbotron.png");
+    }
+  }
+}

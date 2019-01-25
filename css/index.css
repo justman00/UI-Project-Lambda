@@ -342,6 +342,51 @@ header .navigation h2 {
     content: url("../img/services/services-mobile-jumbotron.png");
   }
 }
+.main-header-contact {
+  position: relative;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .main-header-contact {
+    max-width: 500px;
+  }
+}
+.main-header-contact .img-text-contact {
+  position: absolute;
+  bottom: 15px;
+  left: 80px;
+}
+@media (max-width: 500px) {
+  .main-header-contact .img-text-contact {
+    left: 15px;
+    bottom: 20px;
+  }
+}
+.main-header-contact .img-text-contact h1 {
+  font-size: 6rem;
+  padding: 0;
+  background-color: green;
+  line-height: 1.25;
+  color: white;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 500px) {
+  .main-header-contact .img-text-contact h1 {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+}
+.main-header-contact img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .main-header-contact img {
+    content: url("../img/contact/contact-mobile-jumbotron.png");
+  }
+}
 .general-info {
   margin-top: 5%;
   display: flex;
