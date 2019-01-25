@@ -26,3 +26,49 @@ links.forEach(link => {
     console.log("changed");
   }
 });
+
+class TabLink {
+  constructor(element) {
+    this.element = element;
+    // get the data number in order to access the description afterwards
+    this.data = this.element.dataset.tab;
+    this.instanceDesc = document.querySelector(
+      `.block-item[data-tab="${this.data}"]`
+    );
+
+    // create a new class of description
+    this.description = new Description(this.instanceDesc);
+
+    this.element.addEventListener("click", () => this.select());
+  }
+
+  select() {
+    const allLinks = document.querySelectorAll(".button");
+
+    // making all the buttons not be selected
+    allLinks.forEach(link => link.classList.remove("focused"));
+
+    this.description.select();
+
+    this.element.classList.add("focused");
+  }
+}
+
+class Description {
+  constructor(element) {
+    this.element = element;
+  }
+
+  select() {
+    const allDescs = document.querySelectorAll(".block-item");
+
+    // make all of them display none
+    allDescs.forEach(desc => desc.classList.remove("description-selected"));
+
+    // give this description a block display
+    this.element.classList.add("description-selected");
+  }
+}
+
+const clickButtons = document.querySelectorAll(".button");
+clickButtons.forEach(link => new TabLink(link));

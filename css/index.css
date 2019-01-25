@@ -604,6 +604,12 @@ header .navigation h2 {
   margin-top: 5%;
   width: 48%;
 }
+.block-item {
+  display: none;
+}
+.description-selected {
+  display: block;
+}
 footer {
   max-width: 1000px display: flex; justify-content: center; align-items: center;;
   flex-direction: column;
