@@ -65,11 +65,19 @@
 }
 
 .main-header {
-  max-width: 1000px;
+  // max-width: 1000px;
   position: relative;
   margin: 0 auto;
+  @media @mobile {
+    max-width: 500px;
+  }
+
   img {
     width: 100%;
     height: auto;
+
+    @media @mobile {
+      content: url("../img/services/services-mobile-jumbotron.png");
+    }
   }
 }

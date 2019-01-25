@@ -325,13 +325,22 @@ header .navigation h2 {
   }
 }
 .main-header {
-  max-width: 1000px;
   position: relative;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .main-header {
+    max-width: 500px;
+  }
 }
 .main-header img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .main-header img {
+    content: url("../img/services/services-mobile-jumbotron.png");
+  }
 }
 .general-info {
   margin-top: 5%;
@@ -434,10 +443,15 @@ header .navigation h2 {
   align-items: flex-start;
   flex-direction: column;
 }
-.main-introduction p {
+.main-introduction-text {
   font-size: 1.6rem;
   font-family: sans-serif;
   line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .main-introduction-text {
+    margin-top: 5%;
+  }
 }
 .main-introduction-buttons {
   display: flex;
@@ -445,6 +459,12 @@ header .navigation h2 {
   align-items: baseline;
   width: 100%;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .main-introduction-buttons {
+    margin-top: 10%;
+    flex-direction: column;
+  }
 }
 .main-introduction-buttons .button {
   width: 20%;
@@ -454,6 +474,13 @@ header .navigation h2 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+@media (max-width: 500px) {
+  .main-introduction-buttons .button {
+    width: 100%;
+    padding: 4% 0;
+    margin-bottom: 5%;
+  }
 }
 .main-introduction-buttons .button:hover {
   color: white;
@@ -582,6 +609,11 @@ header .navigation h2 {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .description {
+    flex-direction: column;
+  }
+}
 .description-text {
   width: 48%;
   display: flex;
@@ -589,6 +621,11 @@ header .navigation h2 {
   align-items: flex-start;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 500px) {
+  .description-text {
+    width: 100%;
+  }
 }
 .description-text h2 {
   font-size: 3rem;
@@ -604,11 +641,42 @@ header .navigation h2 {
   margin-top: 5%;
   width: 48%;
 }
+@media (max-width: 500px) {
+  .description-img {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .description-img img {
+    width: 100%;
+    height: auto;
+  }
+}
 .block-item {
   display: none;
 }
 .description-selected {
   display: block;
+}
+@media (max-width: 500px) {
+  #desc-img-1 {
+    content: url("../img/services/services-tab-mobile-pre-construction-img.png");
+  }
+}
+@media (max-width: 500px) {
+  #desc-img-2 {
+    content: url("../img/services/services-tab-mobile-construction-img.png");
+  }
+}
+@media (max-width: 500px) {
+  #desc-img-3 {
+    content: url("../img/services/services-tab-mobile-design-build-img.png");
+  }
+}
+@media (max-width: 500px) {
+  #desc-img-4 {
+    content: url("../img/services/services-tab-mobile-sustainability-img.png");
+  }
 }
 footer {
   max-width: 1000px display: flex; justify-content: center; align-items: center;;

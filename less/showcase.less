@@ -112,11 +112,18 @@
   margin-top: 5%;
   margin-bottom: 5%;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   &-text {
     width: 48%;
     .flex-it(flex-start, flex-start);
     flex-direction: column;
     font-family: "Roboto", sans-serif;
+    @media @mobile {
+      width: 100%;
+    }
 
     h2 {
       font-size: 3rem;
@@ -133,6 +140,16 @@
   &-img {
     margin-top: 5%;
     width: 48%;
+
+    @media @mobile {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -142,4 +159,28 @@
 
 .description-selected {
   display: block;
+}
+
+#desc-img-1 {
+  @media @mobile {
+    content: url("../img/services/services-tab-mobile-pre-construction-img.png");
+  }
+}
+
+#desc-img-2 {
+  @media @mobile {
+    content: url("../img/services/services-tab-mobile-construction-img.png");
+  }
+}
+
+#desc-img-3 {
+  @media @mobile {
+    content: url("../img/services/services-tab-mobile-design-build-img.png");
+  }
+}
+
+#desc-img-4 {
+  @media @mobile {
+    content: url("../img/services/services-tab-mobile-sustainability-img.png");
+  }
 }
