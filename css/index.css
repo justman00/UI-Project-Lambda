@@ -230,18 +230,29 @@ header .navigation h2 {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
 }
-#menu a {
+#menu .menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 20%;
+}
+@media (max-width: 500px) {
+  #menu .menu-container {
+    padding-top: 30%;
+  }
+}
+#menu .menu-container a {
   font-size: 5.5rem;
-  margin-top: 5%;
+  margin-top: 25%;
   text-decoration: none;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-#menu a:hover {
+#menu .menu-container a:hover {
   color: black;
   transition: all 0.5s;
 }
@@ -446,11 +457,11 @@ header .navigation h2 {
 }
 .main-introduction-buttons .button:hover {
   color: white;
-  background: #2a7575;
+  background: #158caa;
   transition: all 0.5s;
 }
 .focused {
-  background-color: #228686;
+  background-color: #158caa;
   color: white;
 }
 .secondary-section {

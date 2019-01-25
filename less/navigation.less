@@ -49,20 +49,35 @@ header {
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-  .flex-it(center, center);
-  flex-direction: column;
+  .flex-it(center, flex-start);
 
-  a {
-    font-size: 5.5rem;
-    margin-top: 5%;
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+  .menu-container {
+    .flex-it(center, flex-start);
+    flex-direction: column;
+    padding-top: 20%;
 
-    &:hover {
-      color: black;
-      transition: all 0.5s;
+    @media @mobile {
+      padding-top: 30%;
+    }
+
+    a {
+      font-size: 5.5rem;
+      margin-top: 25%;
+      text-decoration: none;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+
+      // &:first-child {
+      //   @media @mobile {
+      //     padding-top: 35%;
+      //   }
+      // }
+
+      &:hover {
+        color: black;
+        transition: all 0.5s;
+      }
     }
   }
 }
