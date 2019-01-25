@@ -316,6 +316,7 @@ header .navigation h2 {
 .main-header {
   max-width: 1000px;
   position: relative;
+  margin: 0 auto;
 }
 .main-header img {
   width: 100%;
