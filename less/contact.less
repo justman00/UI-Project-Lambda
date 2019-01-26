@@ -1,0 +1,111 @@
+.main-content {
+  margin-top: 5%;
+  .flex-it(space-between, baseline);
+  margin-bottom: 5%;
+
+  .main-form {
+    width: 45%;
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 5%;
+    }
+
+    .form {
+      width: 100%;
+      margin-top: 5%;
+      margin-bottom: 7%;
+      .flex-it(flex-start, flex-start);
+      flex-direction: column;
+
+      label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        margin-bottom: 3%;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px;
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        outline: none;
+
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+
+      p {
+        font-size: 1.25rem;
+        margin-top: 2%;
+      }
+
+      select {
+        width: 100%;
+        font-size: 1.8rem;
+        height: 35px;
+        background-color: #fff;
+        outline: none;
+      }
+
+      textarea {
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        font-size: 1.6rem;
+        margin-bottom: 3%;
+      }
+
+      //   label {
+      //     display: block;
+      //     font-size: 2rem;
+      //     font-family: sans-serif;
+      //     margin-bottom: 1%;
+      //     margin-top: 5%;
+      //   }
+      //   input {
+      //     width: 100%;
+      //     padding: 5px;
+      //     font-size: 2rem;
+
+      //     &::placeholder {
+      //       font-family: sans-serif;
+      //       opacity: 0.5;
+      //     }
+      //   }
+      //   textarea {
+      //     display: block;
+      //   }
+    }
+    .radio-buttons {
+      width: 100%;
+      .radio {
+        width: 100%;
+        label {
+          font-size: 1.6rem;
+        }
+        input {
+          margin: 2% 2% 0 0;
+        }
+      }
+    }
+
+    .form-button {
+      margin-top: 6%;
+      width: 35%;
+
+      button {
+        width: 100%;
+        .custom-btn();
+        padding: 9% 5%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
