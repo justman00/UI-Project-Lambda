@@ -72,3 +72,8 @@ class Description {
 
 const clickButtons = document.querySelectorAll(".button");
 clickButtons.forEach(link => new TabLink(link));
+
+// make the input unchecked
+let radios = document.querySelectorAll(".radio input");
+console.log(radios);
+radios.forEach(radio => (radio.checked = false));

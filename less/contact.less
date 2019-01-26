@@ -3,6 +3,43 @@
   .flex-it(space-between, baseline);
   margin-bottom: 5%;
 
+  .addresses {
+    width: 35%;
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 7%;
+    }
+
+    &-content {
+      width: 100%;
+      .flex-it(space-between, flex-start);
+      flex-direction: column;
+
+      margin-top: 7%;
+      margin-bottom: 5%;
+      h3 {
+        font-size: 1.8rem;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 2%;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 1%;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
   .main-form {
     width: 45%;
     .flex-it(flex-start, flex-start);
@@ -18,7 +55,7 @@
     .form {
       width: 100%;
       margin-top: 5%;
-      margin-bottom: 7%;
+      margin-bottom: 5%;
       .flex-it(flex-start, flex-start);
       flex-direction: column;
 
@@ -61,27 +98,6 @@
         font-size: 1.6rem;
         margin-bottom: 3%;
       }
-
-      //   label {
-      //     display: block;
-      //     font-size: 2rem;
-      //     font-family: sans-serif;
-      //     margin-bottom: 1%;
-      //     margin-top: 5%;
-      //   }
-      //   input {
-      //     width: 100%;
-      //     padding: 5px;
-      //     font-size: 2rem;
-
-      //     &::placeholder {
-      //       font-family: sans-serif;
-      //       opacity: 0.5;
-      //     }
-      //   }
-      //   textarea {
-      //     display: block;
-      //   }
     }
     .radio-buttons {
       width: 100%;
@@ -92,6 +108,7 @@
         }
         input {
           margin: 2% 2% 0 0;
+          outline: none;
         }
       }
     }

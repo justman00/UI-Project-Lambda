@@ -153,9 +153,6 @@ html {
   max-width: 900px;
   margin: 0 auto;
 }
-.all-sections-contact {
-  margin: 0 10%;
-}
 @media (max-width: 500px) {
   .all-sections {
     max-width: 450px;
@@ -733,6 +730,41 @@ header .navigation h2 {
   align-items: baseline;
   margin-bottom: 5%;
 }
+.main-content .addresses {
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main-content .addresses h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 7%;
+}
+.main-content .addresses-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+.main-content .addresses-content h3 {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2%;
+  font-weight: 600;
+}
+.main-content .addresses-content p {
+  font-size: 1.4rem;
+  margin-top: 1%;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 5px;
+}
 .main-content .main-form {
   width: 45%;
   display: flex;
@@ -749,7 +781,7 @@ header .navigation h2 {
 .main-content .main-form .form {
   width: 100%;
   margin-top: 5%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -800,6 +832,7 @@ header .navigation h2 {
 }
 .main-content .main-form .radio-buttons .radio input {
   margin: 2% 2% 0 0;
+  outline: none;
 }
 .main-content .main-form .form-button {
   margin-top: 6%;
