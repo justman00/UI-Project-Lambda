@@ -359,7 +359,7 @@ header .navigation h2 {
 @media (max-width: 500px) {
   .main-header-contact .img-text-contact {
     left: 15px;
-    bottom: 20px;
+    bottom: 30px;
   }
 }
 .main-header-contact .img-text-contact h1 {
@@ -374,7 +374,7 @@ header .navigation h2 {
 }
 @media (max-width: 500px) {
   .main-header-contact .img-text-contact h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 600;
   }
 }
@@ -730,12 +730,23 @@ header .navigation h2 {
   align-items: baseline;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
 .main-content .addresses {
   width: 35%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .main-content .addresses {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 .main-content .addresses h2 {
   font-family: "Roboto", sans-serif;
@@ -751,6 +762,11 @@ header .navigation h2 {
   flex-direction: column;
   margin-top: 7%;
   margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .main-content .addresses-content {
+    margin-top: 3%;
+  }
 }
 .main-content .addresses-content h3 {
   font-size: 1.8rem;
@@ -771,6 +787,11 @@ header .navigation h2 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .main-content .main-form {
+    width: 100%;
+  }
 }
 .main-content .main-form h2 {
   font-family: "Roboto", sans-serif;
@@ -799,6 +820,11 @@ header .navigation h2 {
   font-size: 1.6rem;
   font-family: sans-serif;
   outline: none;
+}
+@media (max-width: 500px) {
+  .main-content .main-form .form input {
+    padding: 10px;
+  }
 }
 .main-content .main-form .form input::placeholder {
   opacity: 0.5;
@@ -831,12 +857,30 @@ header .navigation h2 {
   font-size: 1.6rem;
 }
 .main-content .main-form .radio-buttons .radio input {
-  margin: 2% 2% 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  transition: 0.2s all linear;
   outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.main-content .main-form .radio-buttons .radio input:checked {
+  border: 6px solid black;
 }
 .main-content .main-form .form-button {
   margin-top: 6%;
   width: 35%;
+}
+@media (max-width: 500px) {
+  .main-content .main-form .form-button {
+    width: 100%;
+  }
 }
 .main-content .main-form .form-button button {
   width: 100%;
@@ -852,6 +896,12 @@ header .navigation h2 {
   color: white;
   background-color: black;
   transition: all 0.5s;
+}
+@media (max-width: 500px) {
+  .main-content .main-form .form-button button {
+    padding: 4%;
+    font-size: 2rem;
+  }
 }
 footer {
   max-width: 1000px display: flex; justify-content: center; align-items: center;;

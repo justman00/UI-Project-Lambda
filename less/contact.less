@@ -2,8 +2,16 @@
   margin-top: 5%;
   .flex-it(space-between, baseline);
   margin-bottom: 5%;
+  @media @mobile {
+    flex-direction: column;
+  }
 
   .addresses {
+    @media @mobile {
+      width: 100%;
+      margin-top: 10%;
+    }
+
     width: 35%;
     .flex-it(flex-start, flex-start);
     flex-direction: column;
@@ -16,6 +24,9 @@
     }
 
     &-content {
+      @media @mobile {
+        margin-top: 3%;
+      }
       width: 100%;
       .flex-it(space-between, flex-start);
       flex-direction: column;
@@ -45,6 +56,10 @@
     .flex-it(flex-start, flex-start);
     flex-direction: column;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     h2 {
       font-family: "Roboto", sans-serif;
       font-size: 3rem;
@@ -72,6 +87,10 @@
         font-size: 1.6rem;
         font-family: sans-serif;
         outline: none;
+
+        @media @mobile {
+          padding: 10px;
+        }
 
         &::placeholder {
           opacity: 0.5;
@@ -106,9 +125,30 @@
         label {
           font-size: 1.6rem;
         }
+        // input {
+        //   margin: 2% 2% 0 0;
+        //   outline: none;
+        // }
         input {
-          margin: 2% 2% 0 0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+
+          border-radius: 50%;
+          width: 16px;
+          height: 16px;
+
+          border: 1px solid #999;
+          transition: 0.2s all linear;
           outline: none;
+          margin-right: 5px;
+
+          position: relative;
+          top: 4px;
+        }
+
+        input:checked {
+          border: 6px solid black;
         }
       }
     }
@@ -117,11 +157,20 @@
       margin-top: 6%;
       width: 35%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       button {
         width: 100%;
         .custom-btn();
         padding: 9% 5%;
         font-size: 1.6rem;
+
+        @media @mobile {
+          padding: 4%;
+          font-size: 2rem;
+        }
       }
     }
   }
