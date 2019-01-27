@@ -728,7 +728,8 @@ header .navigation h2 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid black;
 }
 @media (max-width: 500px) {
   .main-content {
@@ -903,6 +904,81 @@ header .navigation h2 {
     font-size: 2rem;
   }
 }
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.carousel-title {
+  width: 100%;
+  padding: 2.5% 0;
+}
+@media (max-width: 500px) {
+  .carousel-title {
+    padding: 5% 0;
+  }
+}
+.carousel-title h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #07080a;
+}
+@media (max-width: 500px) {
+  .carousel-title h2 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    height: 200px;
+    overflow: hidden;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button {
+  z-index: 100000;
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: block;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.carousel .current {
+  display: block;
+  opacity: 1;
+  height: auto;
+  width: 100%;
+  transition: opacity 0.5s;
+}
 footer {
   max-width: 1000px display: flex; justify-content: center; align-items: center;;
   flex-direction: column;
@@ -1028,5 +1104,18 @@ footer .copyright p {
 @media (max-width: 500px) {
   footer .copyright p {
     text-align: initial;
+  }
+}
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+  /* So they look staggered */
+}
+@keyframes come-in {
+  to {
+    transform: translateY(0);
   }
 }
